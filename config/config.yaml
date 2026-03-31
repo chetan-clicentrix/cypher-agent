@@ -1,0 +1,12 @@
+app:
+  name: Cypher
+  version: 0.1.0
+  log_level: INFO
+
+llm_routing:
+  enabled: true
+  simple_threshold: 3
+  complex_threshold: 7
+  medium_preference: local
+
+# Will be expanded in later phases

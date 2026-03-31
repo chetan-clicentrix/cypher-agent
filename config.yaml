@@ -1,0 +1,52 @@
+# Cipher Centralized Configuration
+# This file controls which AI models are used for which tasks.
+
+# Supported formats:
+# 1. Simple provider name (uses default model for that provider):
+#    - 'ollama' -> locally refers to llama3.2
+#    - 'gemini' -> refers to gemini-2.0-flash
+#    - 'nvidia' -> refers to qwen/qwen3.5-397b-a17b
+# 2. Specific provider and model name:
+#    - 'ollama/deepseek-r1'
+#    - 'gemini/gemini-1.5-pro'
+#    - 'openai/gpt-4o'
+
+llm:
+  # The default model to use if an agent doesn't have a specific preference
+  default_model: "ollama"
+  
+  # The model the Agent Router uses to classify ambiguous intents
+  router_model: "nvidia/qwen/qwen3-next-80b-a3b-instruct" 
+
+  # Specific model overrides for individual agents
+  agent_models:
+    "System Agent": "ollama/llama3.2" # Example of specifying exact model
+    "Memory Agent": "ollama"       # Local model is better for privacy
+    "Knowledge Agent": "ollama"    # Reading local files is better local
+    "Research Agent": "nvidia/qwen/qwen3-next-80b-a3b-instruct"     # NVIDIA is great at web synthesis
+    "General Agent": "meta/llama-3.1-8b-instruct" # Gemini is fast for general chat
+    "Learning Agent": "nvidia"     # Needs high reasoning
+    "Voice Agent": "meta/llama-3.1-8b-instruct"        # Fast local response
+    
+timeouts:
+  # How long to wait for an LLM to respond before failing/falling back (seconds)
+  cloud_timeout: 30
+  local_timeout: 60
+
+tts:
+  # Choose one: "local", "cloud" (gemini), or "riva"
+  provider: "riva"
+  
+  riva:
+    # Extremely realistic, multi-lingual TTS model from NVIDIA
+    voice: "Magpie-Multilingual.EN-US.Jason"
+
+research:
+  # Set to true to use the advanced Tavily AI search (requires TAVILY_API_KEY in .env)
+  # Set to false to use the basic DuckDuckGo search (free, no API key needed)
+  use_tavily: true
+
+voice:
+  # 'modular' = Use your custom STT, the LLMRouter for different models, and Riva TTS (Private & Smart)
+  # 'gemini_live' = Use Google's raw WebSockets for instant, interruptible conversation (Fastest)
+  mode: "modular"

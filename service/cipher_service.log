@@ -1,0 +1,954 @@
+2026-03-13 12:16:25 [INFO] ============================================================
+2026-03-13 12:16:25 [INFO]   Cipher Background Service — Starting
+2026-03-13 12:16:25 [INFO] ============================================================
+2026-03-13 12:16:25 [INFO] PID 18084 written to D:\Cipher\service\cipher.pid
+2026-03-13 12:16:25 [INFO] Tray icon launched (pid=7488)
+2026-03-13 12:16:25 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-13 12:16:32 [INFO] [32m2026-03-13 12:16:32[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-13 12:16:32 [INFO] [32m2026-03-13 12:16:32[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-13 12:16:32 [INFO] [32m2026-03-13 12:16:32[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-13 12:16:32 [INFO] [32m2026-03-13 12:16:32[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Ollama (llama3.2) initialized (Local LLM)[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🌐 Cloud LLM ready: Gemini[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local LLM ready: Ollama (llama3.2)[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Power LLM ready: NVIDIA Qwen3.5-397B[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local TTS (Pyttsx3) ready[0m
+2026-03-13 12:16:33 [INFO] ⚠️ Gemini API key not found. Cloud TTS unavailable.
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Cloud TTS (NVIDIA Riva) ready[0m
+2026-03-13 12:16:33 [INFO] ✅ Google Speech STT initialized (mic: [1] Microphone Array (AMD Audio Dev)
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ Google Speech STT ready (primary)[0m
+2026-03-13 12:16:33 [INFO] ✅ NVIDIA Whisper STT initialized
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ NVIDIA Whisper STT ready (secondary)[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m   Current STT: google[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m📖 Loading session context...[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ SOUL.md loaded (1767 chars)[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ USER.md loaded (User: Chetan Patil)[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ MEMORY.md loaded (1 entries)[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ Today's log ready[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized System Agent[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Memory Agent[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized General Agent[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Learning Agent[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Voice Agent[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Knowledge Agent[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Research Agent[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔀 AgentRouter initialized with 5 agents: System Agent, Memory Agent, Voice Agent, Knowledge Agent, Research Agent[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔄 Fallback agent: General Agent[0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m✅ Cypher is ready![0m
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36mrun_headless[0m - [1m🌙 Headless service mode — entering wake-word standby[0m
+2026-03-13 12:16:33 [INFO] ==================================================
+2026-03-13 12:16:33 [INFO]   🌙  CIPHER IS NOW IN STANDBY
+2026-03-13 12:16:33 [INFO]   Say 'Cipher' to wake up Modular Mode
+2026-03-13 12:16:33 [INFO]   Say 'Jarvis' to wake up Gemini Live Mode
+2026-03-13 12:16:33 [INFO]   Press Ctrl+C to exit
+2026-03-13 12:16:33 [INFO] ==================================================
+2026-03-13 12:16:33 [INFO] [32m2026-03-13 12:16:33[0m | [1mINFO    [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [1m🗣️ Stream-speaking via Riva (Magpie-Multilingual.EN-US.Jason): I'm standing by. Say Cipher or...[0m
+2026-03-13 12:16:39 [INFO] [32m2026-03-13 12:16:39[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36mstart[0m - [1m👂 Wake word detector started - say 'Jarvis' to wake up![0m
+2026-03-13 12:16:40 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-13 12:17:00 [INFO] CypherEngine exited cleanly.
+2026-03-13 12:17:00 [INFO] Cipher Background Service — Stopped.
+2026-03-13 12:18:36 [INFO] ============================================================
+2026-03-13 12:18:36 [INFO]   Cipher Background Service — Starting
+2026-03-13 12:18:36 [INFO] ============================================================
+2026-03-13 12:18:36 [INFO] PID 19664 written to D:\Cipher\service\cipher.pid
+2026-03-13 12:18:36 [INFO] Tray icon launched (pid=15404)
+2026-03-13 12:18:36 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-13 12:18:40 [INFO] [32m2026-03-13 12:18:40[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-13 12:18:40 [INFO] [32m2026-03-13 12:18:40[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-13 12:18:41 [INFO] [32m2026-03-13 12:18:41[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-13 12:18:41 [INFO] [32m2026-03-13 12:18:41[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Ollama (llama3.2) initialized (Local LLM)[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🌐 Cloud LLM ready: Gemini[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local LLM ready: Ollama (llama3.2)[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Power LLM ready: NVIDIA Qwen3.5-397B[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local TTS (Pyttsx3) ready[0m
+2026-03-13 12:18:42 [INFO] ⚠️ Gemini API key not found. Cloud TTS unavailable.
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Cloud TTS (NVIDIA Riva) ready[0m
+2026-03-13 12:18:42 [INFO] ✅ Google Speech STT initialized (mic: [1] Microphone Array (AMD Audio Dev)
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ Google Speech STT ready (primary)[0m
+2026-03-13 12:18:42 [INFO] ✅ NVIDIA Whisper STT initialized
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ NVIDIA Whisper STT ready (secondary)[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m   Current STT: google[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m📖 Loading session context...[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ SOUL.md loaded (1767 chars)[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ USER.md loaded (User: Chetan Patil)[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ MEMORY.md loaded (1 entries)[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ Today's log ready[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized System Agent[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Memory Agent[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized General Agent[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Learning Agent[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Voice Agent[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Knowledge Agent[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Research Agent[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔀 AgentRouter initialized with 5 agents: System Agent, Memory Agent, Voice Agent, Knowledge Agent, Research Agent[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔄 Fallback agent: General Agent[0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m✅ Cypher is ready![0m
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36mrun_headless[0m - [1m🌙 Headless service mode — entering wake-word standby[0m
+2026-03-13 12:18:42 [INFO] ==================================================
+2026-03-13 12:18:42 [INFO]   🌙  CIPHER IS NOW IN STANDBY
+2026-03-13 12:18:42 [INFO]   Say 'Cipher' to wake up Modular Mode
+2026-03-13 12:18:42 [INFO]   Say 'Jarvis' to wake up Gemini Live Mode
+2026-03-13 12:18:42 [INFO]   Press Ctrl+C to exit
+2026-03-13 12:18:42 [INFO] ==================================================
+2026-03-13 12:18:42 [INFO] [32m2026-03-13 12:18:42[0m | [1mINFO    [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [1m🗣️ Stream-speaking via Riva (Magpie-Multilingual.EN-US.Jason): I'm standing by. Say Cipher or...[0m
+2026-03-13 12:18:48 [INFO] [32m2026-03-13 12:18:48[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36mstart[0m - [1m👂 Wake word detector started - say 'Jarvis' to wake up![0m
+2026-03-13 12:18:48 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-13 12:20:37 [INFO] [32m2026-03-13 12:20:37[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-13 12:20:38 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-13 12:20:38 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-13 12:20:38 [INFO] ==================================================
+2026-03-13 12:20:38 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-13 12:20:38 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-13 12:20:38 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-13 12:20:38 [INFO] ==================================================
+2026-03-13 12:20:39 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-13 12:20:39 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-13 12:20:40 [ERROR] Warning: there are non-data parts in the response: ['text', 'thought'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2026-03-13 12:20:49 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-13 12:20:49 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-13 12:20:52 [INFO] ==================================================
+2026-03-13 12:20:52 [INFO]   💬  Back to text mode
+2026-03-13 12:20:52 [INFO] ==================================================
+2026-03-13 12:20:52 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-13 12:20:52 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-13 12:21:06 [INFO] [32m2026-03-13 12:21:06[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-13 12:21:06 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-13 12:21:06 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-13 12:21:06 [INFO] ==================================================
+2026-03-13 12:21:06 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-13 12:21:06 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-13 12:21:06 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-13 12:21:06 [INFO] ==================================================
+2026-03-13 12:21:07 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-13 12:21:07 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-13 12:21:18 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-13 12:21:18 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-13 12:21:20 [INFO] ==================================================
+2026-03-13 12:21:20 [INFO]   💬  Back to text mode
+2026-03-13 12:21:20 [INFO] ==================================================
+2026-03-13 12:21:20 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-13 12:21:20 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-13 12:21:26 [INFO] [32m2026-03-13 12:21:26[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-13 12:21:27 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-13 12:21:27 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-13 12:21:27 [INFO] ==================================================
+2026-03-13 12:21:27 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-13 12:21:27 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-13 12:21:27 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-13 12:21:27 [INFO] ==================================================
+2026-03-13 12:21:27 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-13 12:21:28 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-13 12:21:32 [INFO] 🔧 Jarvis calling tool: play_on_youtube({'query': ''})
+2026-03-13 12:21:33 [INFO]    ✅ Tool result: Opening YouTube search for: ...
+2026-03-13 12:21:51 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-13 12:21:51 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-13 12:21:53 [INFO] ==================================================
+2026-03-13 12:21:53 [INFO]   💬  Back to text mode
+2026-03-13 12:21:53 [INFO] ==================================================
+2026-03-13 12:21:53 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-13 12:21:53 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-13 12:26:47 [INFO] ============================================================
+2026-03-13 12:26:47 [INFO]   Cipher Background Service — Starting
+2026-03-13 12:26:47 [INFO] ============================================================
+2026-03-13 12:26:47 [INFO] PID 6736 written to D:\Cipher\service\cipher.pid
+2026-03-13 12:26:47 [INFO] Tray icon launched (pid=4340)
+2026-03-13 12:26:47 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-13 12:26:53 [INFO] [32m2026-03-13 12:26:53[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-13 12:26:53 [INFO] [32m2026-03-13 12:26:53[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-13 12:26:54 [INFO] [32m2026-03-13 12:26:54[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-13 12:26:54 [INFO] [32m2026-03-13 12:26:54[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Ollama (llama3.2) initialized (Local LLM)[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🌐 Cloud LLM ready: Gemini[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local LLM ready: Ollama (llama3.2)[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Power LLM ready: NVIDIA Qwen3.5-397B[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local TTS (Pyttsx3) ready[0m
+2026-03-13 12:26:55 [INFO] ⚠️ Gemini API key not found. Cloud TTS unavailable.
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Cloud TTS (NVIDIA Riva) ready[0m
+2026-03-13 12:26:55 [INFO] ✅ Google Speech STT initialized (mic: [1] Microphone Array (AMD Audio Dev)
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ Google Speech STT ready (primary)[0m
+2026-03-13 12:26:55 [INFO] ✅ NVIDIA Whisper STT initialized
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ NVIDIA Whisper STT ready (secondary)[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m   Current STT: google[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m📖 Loading session context...[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ SOUL.md loaded (1767 chars)[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ USER.md loaded (User: Chetan Patil)[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ MEMORY.md loaded (1 entries)[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ Today's log ready[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized System Agent[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Memory Agent[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized General Agent[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Learning Agent[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Voice Agent[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Knowledge Agent[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Research Agent[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔀 AgentRouter initialized with 5 agents: System Agent, Memory Agent, Voice Agent, Knowledge Agent, Research Agent[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔄 Fallback agent: General Agent[0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m✅ Cypher is ready![0m
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36mrun_headless[0m - [1m🌙 Headless service mode — entering wake-word standby[0m
+2026-03-13 12:26:55 [INFO] ==================================================
+2026-03-13 12:26:55 [INFO]   🌙  CIPHER IS NOW IN STANDBY
+2026-03-13 12:26:55 [INFO]   Say 'Cipher' to wake up Modular Mode
+2026-03-13 12:26:55 [INFO]   Say 'Jarvis' to wake up Gemini Live Mode
+2026-03-13 12:26:55 [INFO]   Press Ctrl+C to exit
+2026-03-13 12:26:55 [INFO] ==================================================
+2026-03-13 12:26:55 [INFO] [32m2026-03-13 12:26:55[0m | [1mINFO    [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [1m🗣️ Stream-speaking via Riva (Magpie-Multilingual.EN-US.Jason): I'm standing by. Say Cipher or...[0m
+2026-03-13 12:27:01 [INFO] [32m2026-03-13 12:27:01[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36mstart[0m - [1m👂 Wake word detector started - say 'Jarvis' to wake up![0m
+2026-03-13 12:27:01 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-13 12:28:50 [INFO] ============================================================
+2026-03-13 12:28:50 [INFO]   Cipher Background Service — Starting
+2026-03-13 12:28:50 [INFO] ============================================================
+2026-03-13 12:28:50 [INFO] PID 3616 written to D:\Cipher\service\cipher.pid
+2026-03-13 12:28:50 [INFO] Tray icon launched (pid=18324)
+2026-03-13 12:28:50 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-13 12:28:57 [INFO] [32m2026-03-13 12:28:57[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-13 12:28:57 [INFO] [32m2026-03-13 12:28:57[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-13 12:28:57 [INFO] [32m2026-03-13 12:28:57[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-13 12:28:57 [INFO] [32m2026-03-13 12:28:57[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Ollama (llama3.2) initialized (Local LLM)[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🌐 Cloud LLM ready: Gemini[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local LLM ready: Ollama (llama3.2)[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Power LLM ready: NVIDIA Qwen3.5-397B[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local TTS (Pyttsx3) ready[0m
+2026-03-13 12:28:58 [INFO] ⚠️ Gemini API key not found. Cloud TTS unavailable.
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Cloud TTS (NVIDIA Riva) ready[0m
+2026-03-13 12:28:58 [INFO] ✅ Google Speech STT initialized (mic: [1] Microphone Array (AMD Audio Dev)
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ Google Speech STT ready (primary)[0m
+2026-03-13 12:28:58 [INFO] ✅ NVIDIA Whisper STT initialized
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ NVIDIA Whisper STT ready (secondary)[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m   Current STT: google[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m📖 Loading session context...[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ SOUL.md loaded (1767 chars)[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ USER.md loaded (User: Chetan Patil)[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ MEMORY.md loaded (1 entries)[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ Today's log ready[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized System Agent[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Memory Agent[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized General Agent[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Learning Agent[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Voice Agent[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Knowledge Agent[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Research Agent[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔀 AgentRouter initialized with 5 agents: System Agent, Memory Agent, Voice Agent, Knowledge Agent, Research Agent[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔄 Fallback agent: General Agent[0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m✅ Cypher is ready![0m
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36mrun_headless[0m - [1m🌙 Headless service mode — entering wake-word standby[0m
+2026-03-13 12:28:58 [INFO] ==================================================
+2026-03-13 12:28:58 [INFO]   🌙  CIPHER IS NOW IN STANDBY
+2026-03-13 12:28:58 [INFO]   Say 'Cipher' to wake up Modular Mode
+2026-03-13 12:28:58 [INFO]   Say 'Jarvis' to wake up Gemini Live Mode
+2026-03-13 12:28:58 [INFO]   Press Ctrl+C to exit
+2026-03-13 12:28:58 [INFO] ==================================================
+2026-03-13 12:28:58 [INFO] [32m2026-03-13 12:28:58[0m | [1mINFO    [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [1m🗣️ Stream-speaking via Riva (Magpie-Multilingual.EN-US.Jason): I'm standing by. Say Cipher or...[0m
+2026-03-13 12:29:05 [INFO] [32m2026-03-13 12:29:05[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36mstart[0m - [1m👂 Wake word detector started - say 'Jarvis' to wake up![0m
+2026-03-13 12:29:05 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-13 12:29:10 [INFO] [32m2026-03-13 12:29:10[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-13 12:29:11 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-13 12:29:11 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-13 12:29:11 [INFO] ==================================================
+2026-03-13 12:29:11 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-13 12:29:11 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-13 12:29:11 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-13 12:29:11 [INFO] ==================================================
+2026-03-13 12:29:11 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-13 12:29:11 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-13 12:29:13 [ERROR] Warning: there are non-data parts in the response: ['text', 'thought'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2026-03-13 12:29:20 [INFO] 🔧 Jarvis calling tool: set_volume({'level': 30})
+2026-03-13 12:29:22 [INFO]    ✅ Tool result: Volume set to 30%...
+2026-03-13 13:02:35 [INFO] ============================================================
+2026-03-13 13:02:35 [INFO]   Cipher Background Service — Starting
+2026-03-13 13:02:35 [INFO] ============================================================
+2026-03-13 13:02:35 [INFO] PID 18712 written to D:\Cipher\service\cipher.pid
+2026-03-13 13:02:35 [INFO] Tray icon launched (pid=18772)
+2026-03-13 13:02:35 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-13 13:02:43 [INFO] [32m2026-03-13 13:02:43[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-13 13:02:43 [INFO] [32m2026-03-13 13:02:43[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-13 13:02:44 [INFO] [32m2026-03-13 13:02:44[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-13 13:02:44 [INFO] [32m2026-03-13 13:02:44[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Ollama (llama3.2) initialized (Local LLM)[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🌐 Cloud LLM ready: Gemini[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local LLM ready: Ollama (llama3.2)[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Power LLM ready: NVIDIA Qwen3.5-397B[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local TTS (Pyttsx3) ready[0m
+2026-03-13 13:02:45 [INFO] ⚠️ Gemini API key not found. Cloud TTS unavailable.
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Cloud TTS (NVIDIA Riva) ready[0m
+2026-03-13 13:02:45 [INFO] ✅ Google Speech STT initialized (mic: [1] Microphone Array (AMD Audio Dev)
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ Google Speech STT ready (primary)[0m
+2026-03-13 13:02:45 [INFO] ✅ NVIDIA Whisper STT initialized
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ NVIDIA Whisper STT ready (secondary)[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m   Current STT: google[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m📖 Loading session context...[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ SOUL.md loaded (1767 chars)[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ USER.md loaded (User: Chetan Patil)[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ MEMORY.md loaded (1 entries)[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ Today's log ready[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized System Agent[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Memory Agent[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized General Agent[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Learning Agent[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Voice Agent[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Knowledge Agent[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Research Agent[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔀 AgentRouter initialized with 5 agents: System Agent, Memory Agent, Voice Agent, Knowledge Agent, Research Agent[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔄 Fallback agent: General Agent[0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m✅ Cypher is ready![0m
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36mrun_headless[0m - [1m🌙 Headless service mode — entering wake-word standby[0m
+2026-03-13 13:02:45 [INFO] ==================================================
+2026-03-13 13:02:45 [INFO]   🌙  CIPHER IS NOW IN STANDBY
+2026-03-13 13:02:45 [INFO]   Say 'Cipher' to wake up Modular Mode
+2026-03-13 13:02:45 [INFO]   Say 'Jarvis' to wake up Gemini Live Mode
+2026-03-13 13:02:45 [INFO]   Press Ctrl+C to exit
+2026-03-13 13:02:45 [INFO] ==================================================
+2026-03-13 13:02:45 [INFO] [32m2026-03-13 13:02:45[0m | [1mINFO    [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [1m🗣️ Stream-speaking via Riva (Magpie-Multilingual.EN-US.Jason): I'm standing by. Say Cipher or...[0m
+2026-03-13 13:02:51 [INFO] [32m2026-03-13 13:02:51[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36mstart[0m - [1m👂 Wake word detector started - say 'Jarvis' to wake up![0m
+2026-03-13 13:02:52 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-13 13:09:13 [INFO] [32m2026-03-13 13:09:13[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-13 13:09:14 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-13 13:09:14 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-13 13:09:14 [INFO] ==================================================
+2026-03-13 13:09:14 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-13 13:09:14 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-13 13:09:14 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-13 13:09:14 [INFO] ==================================================
+2026-03-13 13:09:14 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-13 13:09:15 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-13 13:09:16 [ERROR] Warning: there are non-data parts in the response: ['text', 'thought'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2026-03-13 13:09:25 [INFO] 🔧 Jarvis calling tool: set_volume({'level': 100})
+2026-03-13 13:09:26 [INFO]    ✅ Tool result: Volume set to 100%...
+2026-03-13 13:09:40 [INFO] 🔧 Jarvis calling tool: play_on_youtube({'query': 'romantic song'})
+2026-03-13 13:09:40 [INFO]    ✅ Tool result: Opening YouTube search for: romantic song...
+2026-03-13 13:09:59 [INFO] 🔧 Jarvis calling tool: take_screenshot({})
+2026-03-13 13:09:59 [INFO]    ✅ Tool result: Screenshot saved to: C:\Users\cheta\OneDrive\Desktop\screenshots\screenshot_20260313_130959.png...
+2026-03-13 13:10:25 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-13 13:10:25 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-13 13:10:44 [INFO] ==================================================
+2026-03-13 13:10:44 [INFO]   💬  Back to text mode
+2026-03-13 13:10:44 [INFO] ==================================================
+2026-03-13 13:10:44 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-13 13:10:44 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-13 13:14:15 [INFO] ============================================================
+2026-03-13 13:14:15 [INFO]   Cipher Background Service — Starting
+2026-03-13 13:14:15 [INFO] ============================================================
+2026-03-13 13:14:15 [INFO] PID 14140 written to D:\Cipher\service\cipher.pid
+2026-03-13 13:14:15 [INFO] Tray icon launched (pid=16896)
+2026-03-13 13:14:15 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-13 13:14:21 [INFO] [32m2026-03-13 13:14:21[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-13 13:14:21 [INFO] [32m2026-03-13 13:14:21[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-13 13:14:22 [INFO] [32m2026-03-13 13:14:22[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-13 13:14:22 [INFO] [32m2026-03-13 13:14:22[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-15 10:10:54 [INFO] ============================================================
+2026-03-15 10:10:54 [INFO]   Cipher Background Service — Starting
+2026-03-15 10:10:54 [INFO] ============================================================
+2026-03-15 10:10:54 [INFO] PID 17880 written to D:\Cipher\service\cipher.pid
+2026-03-15 10:10:54 [INFO] Tray icon launched (pid=18108)
+2026-03-15 10:10:54 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-15 10:11:01 [INFO] [32m2026-03-15 10:11:01[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-15 10:11:01 [INFO] [32m2026-03-15 10:11:01[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-15 10:11:02 [INFO] [32m2026-03-15 10:11:02[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-15 10:11:02 [INFO] [32m2026-03-15 10:11:02[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Ollama (llama3.2) initialized (Local LLM)[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🌐 Cloud LLM ready: Gemini[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local LLM ready: Ollama (llama3.2)[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Power LLM ready: NVIDIA Qwen3.5-397B[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local TTS (Pyttsx3) ready[0m
+2026-03-15 10:11:03 [INFO] ⚠️ Gemini API key not found. Cloud TTS unavailable.
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Cloud TTS (NVIDIA Riva) ready[0m
+2026-03-15 10:11:03 [INFO] ✅ Google Speech STT initialized (mic: [1] Microphone Array (AMD Audio Dev)
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ Google Speech STT ready (primary)[0m
+2026-03-15 10:11:03 [INFO] ✅ NVIDIA Whisper STT initialized
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ NVIDIA Whisper STT ready (secondary)[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m   Current STT: google[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m📖 Loading session context...[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ SOUL.md loaded (1767 chars)[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ USER.md loaded (User: Chetan Patil)[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ MEMORY.md loaded (1 entries)[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ Today's log ready[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized System Agent[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Memory Agent[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized General Agent[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Learning Agent[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Voice Agent[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Knowledge Agent[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Research Agent[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔀 AgentRouter initialized with 5 agents: System Agent, Memory Agent, Voice Agent, Knowledge Agent, Research Agent[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔄 Fallback agent: General Agent[0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m✅ Cypher is ready![0m
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36mrun_headless[0m - [1m🌙 Headless service mode — entering wake-word standby[0m
+2026-03-15 10:11:03 [INFO] ==================================================
+2026-03-15 10:11:03 [INFO]   🌙  CIPHER IS NOW IN STANDBY
+2026-03-15 10:11:03 [INFO]   Say 'Cipher' to wake up Modular Mode
+2026-03-15 10:11:03 [INFO]   Say 'Jarvis' to wake up Gemini Live Mode
+2026-03-15 10:11:03 [INFO]   Press Ctrl+C to exit
+2026-03-15 10:11:03 [INFO] ==================================================
+2026-03-15 10:11:03 [INFO] [32m2026-03-15 10:11:03[0m | [1mINFO    [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [1m🗣️ Stream-speaking via Riva (Magpie-Multilingual.EN-US.Jason): I'm standing by. Say Cipher or...[0m
+2026-03-15 10:11:11 [INFO] [32m2026-03-15 10:11:11[0m | [31m[1mERROR   [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [31m[1mRiva TTS error: <_MultiThreadedRendezvous of RPC that terminated with:
+2026-03-15 10:11:11 [INFO] 	status = StatusCode.UNAVAILABLE
+2026-03-15 10:11:11 [INFO] 	details = "DNS resolution failed for grpc.nvcf.nvidia.com:443: UNAVAILABLE: getaddrinfo: WSA Error (No such host is known.
+2026-03-15 10:11:11 [INFO]  -- 11001)"
+2026-03-15 10:11:11 [INFO] 	debug_error_string = "UNKNOWN:Error received from peer  {created_time:"2026-03-15T04:41:11.6319572+00:00", grpc_status:14, grpc_message:"DNS resolution failed for grpc.nvcf.nvidia.com:443: UNAVAILABLE: getaddrinfo: WSA Error (No such host is known.\r\n -- 11001)"}"
+2026-03-15 10:11:11 [INFO] >[0m
+2026-03-15 10:11:13 [INFO] [32m2026-03-15 10:11:13[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36mstart[0m - [1m👂 Wake word detector started - say 'Jarvis' to wake up![0m
+2026-03-15 10:11:14 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 10:58:26 [INFO] ============================================================
+2026-03-18 10:58:26 [INFO]   Cipher Background Service — Starting
+2026-03-18 10:58:26 [INFO] ============================================================
+2026-03-18 10:58:26 [INFO] PID 20424 written to D:\Cipher\service\cipher.pid
+2026-03-18 10:58:26 [INFO] Tray icon launched (pid=20452)
+2026-03-18 10:58:26 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-18 10:58:33 [INFO] [32m2026-03-18 10:58:33[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-18 10:58:33 [INFO] [32m2026-03-18 10:58:33[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-18 10:58:34 [INFO] [32m2026-03-18 10:58:34[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-18 10:58:34 [INFO] [32m2026-03-18 10:58:34[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Ollama (llama3.2) initialized (Local LLM)[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🌐 Cloud LLM ready: Gemini[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local LLM ready: Ollama (llama3.2)[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Power LLM ready: NVIDIA Qwen3.5-397B[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local TTS (Pyttsx3) ready[0m
+2026-03-18 10:58:35 [INFO] ⚠️ Gemini API key not found. Cloud TTS unavailable.
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Cloud TTS (NVIDIA Riva) ready[0m
+2026-03-18 10:58:35 [INFO] ✅ Google Speech STT initialized (mic: [1] Microphone Array (AMD Audio Dev)
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ Google Speech STT ready (primary)[0m
+2026-03-18 10:58:35 [INFO] ✅ NVIDIA Whisper STT initialized
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ NVIDIA Whisper STT ready (secondary)[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m   Current STT: google[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m📖 Loading session context...[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ SOUL.md loaded (1767 chars)[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ USER.md loaded (User: Chetan Patil)[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ MEMORY.md loaded (1 entries)[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ Today's log ready[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized System Agent[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Memory Agent[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized General Agent[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Learning Agent[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Voice Agent[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Knowledge Agent[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Research Agent[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔀 AgentRouter initialized with 5 agents: System Agent, Memory Agent, Voice Agent, Knowledge Agent, Research Agent[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔄 Fallback agent: General Agent[0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m✅ Cypher is ready![0m
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36mrun_headless[0m - [1m🌙 Headless service mode — entering wake-word standby[0m
+2026-03-18 10:58:35 [INFO] ==================================================
+2026-03-18 10:58:35 [INFO]   🌙  CIPHER IS NOW IN STANDBY
+2026-03-18 10:58:35 [INFO]   Say 'Cipher' to wake up Modular Mode
+2026-03-18 10:58:35 [INFO]   Say 'Jarvis' to wake up Gemini Live Mode
+2026-03-18 10:58:35 [INFO]   Press Ctrl+C to exit
+2026-03-18 10:58:35 [INFO] ==================================================
+2026-03-18 10:58:35 [INFO] [32m2026-03-18 10:58:35[0m | [1mINFO    [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [1m🗣️ Stream-speaking via Riva (Magpie-Multilingual.EN-US.Jason): I'm standing by. Say Cipher or...[0m
+2026-03-18 10:58:44 [INFO] [32m2026-03-18 10:58:44[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36mstart[0m - [1m👂 Wake word detector started - say 'Jarvis' to wake up![0m
+2026-03-18 10:58:44 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 10:58:48 [INFO] [32m2026-03-18 10:58:48[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 10:58:48 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 10:58:48 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 10:58:48 [INFO] ==================================================
+2026-03-18 10:58:48 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 10:58:48 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 10:58:48 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 10:58:48 [INFO] ==================================================
+2026-03-18 10:58:49 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 10:58:50 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-18 10:58:51 [ERROR] Warning: there are non-data parts in the response: ['text', 'thought'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2026-03-18 10:59:00 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-18 10:59:00 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-18 10:59:02 [INFO] ==================================================
+2026-03-18 10:59:02 [INFO]   💬  Back to text mode
+2026-03-18 10:59:02 [INFO] ==================================================
+2026-03-18 10:59:02 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-18 10:59:02 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 10:59:53 [INFO] [32m2026-03-18 10:59:53[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 10:59:53 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 10:59:53 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 10:59:53 [INFO] ==================================================
+2026-03-18 10:59:53 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 10:59:53 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 10:59:53 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 10:59:53 [INFO] ==================================================
+2026-03-18 10:59:54 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 10:59:55 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-18 11:00:00 [INFO] 🔧 Jarvis calling tool: get_system_stats({})
+2026-03-18 11:00:02 [INFO]    ✅ Tool result: CPU: 8.2% (12 cores)
+2026-03-18 11:00:02 [INFO] RAM: 7.11GB used / 15.35GB total (46.3%)
+2026-03-18 11:00:02 [INFO] Disk C:\: 298.81GB used / 328.85GB tot...
+2026-03-18 11:00:21 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-18 11:00:21 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-18 11:00:24 [INFO] ==================================================
+2026-03-18 11:00:24 [INFO]   💬  Back to text mode
+2026-03-18 11:00:24 [INFO] ==================================================
+2026-03-18 11:00:24 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-18 11:00:24 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 18:16:12 [INFO] ============================================================
+2026-03-18 18:16:12 [INFO]   Cipher Background Service — Starting
+2026-03-18 18:16:12 [INFO] ============================================================
+2026-03-18 18:16:12 [INFO] PID 19892 written to D:\Cipher\service\cipher.pid
+2026-03-18 18:16:12 [INFO] Tray icon launched (pid=19936)
+2026-03-18 18:16:12 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-18 18:16:18 [INFO] [32m2026-03-18 18:16:18[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-18 18:16:18 [INFO] [32m2026-03-18 18:16:18[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-18 18:16:19 [INFO] [32m2026-03-18 18:16:19[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-18 18:16:19 [INFO] [32m2026-03-18 18:16:19[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Ollama (llama3.2) initialized (Local LLM)[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🌐 Cloud LLM ready: Gemini[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local LLM ready: Ollama (llama3.2)[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Power LLM ready: NVIDIA Qwen3.5-397B[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local TTS (Pyttsx3) ready[0m
+2026-03-18 18:16:20 [INFO] ⚠️ Gemini API key not found. Cloud TTS unavailable.
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Cloud TTS (NVIDIA Riva) ready[0m
+2026-03-18 18:16:20 [INFO] ✅ Google Speech STT initialized (mic: [1] Microphone Array (AMD Audio Dev)
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ Google Speech STT ready (primary)[0m
+2026-03-18 18:16:20 [INFO] ✅ NVIDIA Whisper STT initialized
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ NVIDIA Whisper STT ready (secondary)[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m   Current STT: google[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m📖 Loading session context...[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ SOUL.md loaded (1767 chars)[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ USER.md loaded (User: Chetan Patil)[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ MEMORY.md loaded (1 entries)[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ Today's log ready[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized System Agent[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Memory Agent[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized General Agent[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Learning Agent[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Voice Agent[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Knowledge Agent[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Research Agent[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔀 AgentRouter initialized with 5 agents: System Agent, Memory Agent, Voice Agent, Knowledge Agent, Research Agent[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔄 Fallback agent: General Agent[0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m✅ Cypher is ready![0m
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36mrun_headless[0m - [1m🌙 Headless service mode — entering wake-word standby[0m
+2026-03-18 18:16:20 [INFO] ==================================================
+2026-03-18 18:16:20 [INFO]   🌙  CIPHER IS NOW IN STANDBY
+2026-03-18 18:16:20 [INFO]   Say 'Cipher' to wake up Modular Mode
+2026-03-18 18:16:20 [INFO]   Say 'Jarvis' to wake up Gemini Live Mode
+2026-03-18 18:16:20 [INFO]   Press Ctrl+C to exit
+2026-03-18 18:16:20 [INFO] ==================================================
+2026-03-18 18:16:20 [INFO] [32m2026-03-18 18:16:20[0m | [1mINFO    [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [1m🗣️ Stream-speaking via Riva (Magpie-Multilingual.EN-US.Jason): I'm standing by. Say Cipher or...[0m
+2026-03-18 18:16:27 [INFO] [32m2026-03-18 18:16:27[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36mstart[0m - [1m👂 Wake word detector started - say 'Jarvis' to wake up![0m
+2026-03-18 18:16:27 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 18:25:50 [INFO] [32m2026-03-18 18:25:50[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 18:25:51 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 18:25:51 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 18:25:51 [INFO] ==================================================
+2026-03-18 18:25:51 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 18:25:51 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 18:25:51 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 18:25:51 [INFO] ==================================================
+2026-03-18 18:25:52 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 18:25:55 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-18 18:25:58 [ERROR] Warning: there are non-data parts in the response: ['text', 'thought'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2026-03-18 18:26:22 [INFO] 🔧 Jarvis calling tool: get_system_stats({})
+2026-03-18 18:26:24 [INFO]    ✅ Tool result: CPU: 17.4% (12 cores)
+2026-03-18 18:26:24 [INFO] RAM: 4.12GB used / 15.35GB total (26.9%)
+2026-03-18 18:26:24 [INFO] Disk C:\: 299.05GB used / 328.85GB to...
+2026-03-18 18:26:41 [INFO] 🔧 Jarvis calling tool: get_system_stats({})
+2026-03-18 18:26:43 [INFO]    ✅ Tool result: CPU: 24.1% (12 cores)
+2026-03-18 18:26:43 [INFO] RAM: 4.29GB used / 15.35GB total (28.0%)
+2026-03-18 18:26:43 [INFO] Disk C:\: 299.05GB used / 328.85GB to...
+2026-03-18 18:27:06 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-18 18:27:06 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-18 18:27:08 [INFO] ==================================================
+2026-03-18 18:27:08 [INFO]   💬  Back to text mode
+2026-03-18 18:27:08 [INFO] ==================================================
+2026-03-18 18:27:08 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-18 18:27:08 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 18:27:20 [INFO] [32m2026-03-18 18:27:20[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 18:27:20 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 18:27:20 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 18:27:20 [INFO] ==================================================
+2026-03-18 18:27:20 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 18:27:20 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 18:27:20 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 18:27:20 [INFO] ==================================================
+2026-03-18 18:27:21 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 18:27:21 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-18 18:27:39 [INFO] 🔧 Jarvis calling tool: open_app({'app_name': 'Valorant'})
+2026-03-18 18:27:39 [INFO]    ✅ Tool result: I don't know how to open 'Valorant'. Known apps: calculator, chrome, cmd, control panel, discord, ed...
+2026-03-18 18:27:42 [INFO] 🔊 Speaker error: 1008 None. Operation is not implemented, or supported, or enabled.
+2026-03-18 18:27:43 [INFO] ==================================================
+2026-03-18 18:27:43 [INFO]   💬  Back to text mode
+2026-03-18 18:27:43 [INFO] ==================================================
+2026-03-18 18:27:43 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-18 18:27:43 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 18:28:00 [INFO] [32m2026-03-18 18:28:00[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 18:28:01 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 18:28:01 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 18:28:01 [INFO] ==================================================
+2026-03-18 18:28:01 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 18:28:01 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 18:28:01 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 18:28:01 [INFO] ==================================================
+2026-03-18 18:28:01 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 18:28:02 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-18 18:28:13 [INFO] 🔧 Jarvis calling tool: open_app({'app_name': 'valorant'})
+2026-03-18 18:28:13 [INFO]    ✅ Tool result: I don't know how to open 'valorant'. Known apps: calculator, chrome, cmd, control panel, discord, ed...
+2026-03-18 18:28:32 [INFO] 🔧 Jarvis calling tool: open_app({'app_name': 'settings'})
+2026-03-18 18:28:32 [INFO]    ✅ Tool result: Opening settings......
+2026-03-18 18:28:48 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-18 18:28:48 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-18 18:28:50 [INFO] ==================================================
+2026-03-18 18:28:50 [INFO]   💬  Back to text mode
+2026-03-18 18:28:50 [INFO] ==================================================
+2026-03-18 18:28:50 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-18 18:28:50 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 18:29:26 [INFO] [32m2026-03-18 18:29:26[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 18:29:27 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 18:29:27 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 18:29:27 [INFO] ==================================================
+2026-03-18 18:29:27 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 18:29:27 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 18:29:27 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 18:29:27 [INFO] ==================================================
+2026-03-18 18:29:28 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 18:29:28 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-18 18:29:38 [INFO] 🔧 Jarvis calling tool: play_on_youtube({'query': 'anti gravity'})
+2026-03-18 18:29:38 [INFO]    ✅ Tool result: Opening YouTube search for: anti gravity...
+2026-03-18 18:30:55 [INFO] 💤 Jarvis has been silent for 40 seconds. Auto-sleeping...
+2026-03-18 18:30:55 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-18 18:30:55 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-18 18:30:57 [INFO] ==================================================
+2026-03-18 18:30:57 [INFO]   💬  Back to text mode
+2026-03-18 18:30:57 [INFO] ==================================================
+2026-03-18 18:30:57 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-18 18:30:57 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 18:50:45 [INFO] [32m2026-03-18 18:50:45[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 18:50:46 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 18:50:46 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 18:50:46 [INFO] ==================================================
+2026-03-18 18:50:46 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 18:50:46 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 18:50:46 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 18:50:46 [INFO] ==================================================
+2026-03-18 18:50:47 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 18:50:47 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-18 18:51:54 [INFO] 💤 Jarvis has been silent for 40 seconds. Auto-sleeping...
+2026-03-18 18:51:55 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-18 18:51:55 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-18 18:51:57 [INFO] ==================================================
+2026-03-18 18:51:57 [INFO]   💬  Back to text mode
+2026-03-18 18:51:57 [INFO] ==================================================
+2026-03-18 18:51:57 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-18 18:51:57 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 19:09:43 [INFO] ============================================================
+2026-03-18 19:09:43 [INFO]   Cipher Background Service — Starting
+2026-03-18 19:09:43 [INFO] ============================================================
+2026-03-18 19:09:43 [INFO] PID 11752 written to D:\Cipher\service\cipher.pid
+2026-03-18 19:09:43 [INFO] Tray icon launched (pid=7808)
+2026-03-18 19:09:43 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-18 19:09:48 [INFO] [32m2026-03-18 19:09:48[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-18 19:09:48 [INFO] [32m2026-03-18 19:09:48[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-18 19:09:49 [INFO] [32m2026-03-18 19:09:49[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-18 19:09:49 [INFO] [32m2026-03-18 19:09:49[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Ollama (llama3.2) initialized (Local LLM)[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🌐 Cloud LLM ready: Gemini[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local LLM ready: Ollama (llama3.2)[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Power LLM ready: NVIDIA Qwen3.5-397B[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local TTS (Pyttsx3) ready[0m
+2026-03-18 19:09:50 [INFO] ⚠️ Gemini API key not found. Cloud TTS unavailable.
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Cloud TTS (NVIDIA Riva) ready[0m
+2026-03-18 19:09:50 [INFO] ✅ Google Speech STT initialized (mic: [1] Microphone Array (AMD Audio Dev)
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ Google Speech STT ready (primary)[0m
+2026-03-18 19:09:50 [INFO] ✅ NVIDIA Whisper STT initialized
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ NVIDIA Whisper STT ready (secondary)[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m   Current STT: google[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m📖 Loading session context...[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ SOUL.md loaded (1767 chars)[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ USER.md loaded (User: Chetan Patil)[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ MEMORY.md loaded (1 entries)[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ Today's log ready[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized System Agent[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Memory Agent[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized General Agent[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Learning Agent[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Voice Agent[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Knowledge Agent[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Research Agent[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔀 AgentRouter initialized with 5 agents: System Agent, Memory Agent, Voice Agent, Knowledge Agent, Research Agent[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔄 Fallback agent: General Agent[0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m✅ Cypher is ready![0m
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36mrun_headless[0m - [1m🌙 Headless service mode — entering wake-word standby[0m
+2026-03-18 19:09:50 [INFO] ==================================================
+2026-03-18 19:09:50 [INFO]   🌙  CIPHER IS NOW IN STANDBY
+2026-03-18 19:09:50 [INFO]   Say 'Cipher' to wake up Modular Mode
+2026-03-18 19:09:50 [INFO]   Say 'Jarvis' to wake up Gemini Live Mode
+2026-03-18 19:09:50 [INFO]   Press Ctrl+C to exit
+2026-03-18 19:09:50 [INFO] ==================================================
+2026-03-18 19:09:50 [INFO] [32m2026-03-18 19:09:50[0m | [1mINFO    [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [1m🗣️ Stream-speaking via Riva (Magpie-Multilingual.EN-US.Jason): I'm standing by. Say Cipher or...[0m
+2026-03-18 19:09:56 [INFO] [32m2026-03-18 19:09:56[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36mstart[0m - [1m👂 Wake word detector started - say 'Jarvis' to wake up![0m
+2026-03-18 19:09:56 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 19:10:03 [INFO] [32m2026-03-18 19:10:03[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 19:10:03 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 19:10:03 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 19:10:03 [INFO] ==================================================
+2026-03-18 19:10:03 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 19:10:03 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 19:10:03 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 19:10:03 [INFO] ==================================================
+2026-03-18 19:10:04 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 19:10:05 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-18 19:10:06 [ERROR] Warning: there are non-data parts in the response: ['text', 'thought'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2026-03-18 19:10:18 [INFO] 🔧 Jarvis calling tool: start_hand_tracking({})
+2026-03-18 19:10:18 [INFO]    ✅ Tool result: Hand tracking mode turned on. Camera is active and recognizing gestures....
+2026-03-18 19:10:55 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-18 19:10:55 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-18 19:10:57 [INFO] ==================================================
+2026-03-18 19:10:57 [INFO]   💬  Back to text mode
+2026-03-18 19:10:57 [INFO] ==================================================
+2026-03-18 19:10:57 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-18 19:10:57 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 19:12:47 [INFO] [32m2026-03-18 19:12:47[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 19:12:48 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 19:12:48 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 19:12:48 [INFO] ==================================================
+2026-03-18 19:12:48 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 19:12:48 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 19:12:48 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 19:12:48 [INFO] ==================================================
+2026-03-18 19:12:48 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 19:12:49 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-18 19:12:59 [INFO] 🔧 Jarvis calling tool: stop_hand_tracking({})
+2026-03-18 19:13:00 [INFO]    ✅ Tool result: Hand tracking mode turned off. Camera released....
+2026-03-18 19:13:43 [INFO] 💤 Jarvis has been silent for 40 seconds. Auto-sleeping...
+2026-03-18 19:13:44 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-18 19:13:44 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-18 19:13:46 [INFO] ==================================================
+2026-03-18 19:13:46 [INFO]   💬  Back to text mode
+2026-03-18 19:13:46 [INFO] ==================================================
+2026-03-18 19:13:46 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-18 19:13:46 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 19:13:51 [INFO] [32m2026-03-18 19:13:51[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 19:13:52 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 19:13:52 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 19:13:52 [INFO] ==================================================
+2026-03-18 19:13:52 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 19:13:52 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 19:13:52 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 19:13:52 [INFO] ==================================================
+2026-03-18 19:13:52 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 19:13:53 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-18 19:14:02 [INFO] 🔧 Jarvis calling tool: start_hand_tracking({})
+2026-03-18 19:14:02 [INFO]    ✅ Tool result: Hand tracking mode turned on. Camera is active and recognizing gestures....
+2026-03-18 19:14:45 [INFO] 💤 Jarvis has been silent for 40 seconds. Auto-sleeping...
+2026-03-18 19:14:47 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-18 19:14:47 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-18 19:14:49 [INFO] ==================================================
+2026-03-18 19:14:49 [INFO]   💬  Back to text mode
+2026-03-18 19:14:49 [INFO] ==================================================
+2026-03-18 19:14:49 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-18 19:14:49 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 19:17:27 [INFO] [32m2026-03-18 19:17:27[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 19:17:27 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 19:17:27 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 19:17:27 [INFO] ==================================================
+2026-03-18 19:17:27 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 19:17:27 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 19:17:27 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 19:17:27 [INFO] ==================================================
+2026-03-18 19:17:28 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 19:17:28 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-18 19:17:39 [INFO] 🔧 Jarvis calling tool: start_hand_tracking({})
+2026-03-18 19:17:39 [INFO]    ✅ Tool result: Hand tracking is already running....
+2026-03-18 19:17:49 [INFO] 🔧 Jarvis calling tool: stop_hand_tracking({})
+2026-03-18 19:17:49 [INFO]    ✅ Tool result: Hand tracking mode turned off. Camera released....
+2026-03-18 19:18:33 [INFO] 💤 Jarvis has been silent for 40 seconds. Auto-sleeping...
+2026-03-18 19:18:35 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-18 19:18:35 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-18 19:18:37 [INFO] ==================================================
+2026-03-18 19:18:37 [INFO]   💬  Back to text mode
+2026-03-18 19:18:37 [INFO] ==================================================
+2026-03-18 19:18:37 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-18 19:18:37 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 19:22:27 [INFO] ============================================================
+2026-03-18 19:22:27 [INFO]   Cipher Background Service — Starting
+2026-03-18 19:22:27 [INFO] ============================================================
+2026-03-18 19:22:27 [INFO] PID 9496 written to D:\Cipher\service\cipher.pid
+2026-03-18 19:22:27 [INFO] Tray icon launched (pid=7664)
+2026-03-18 19:22:27 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-18 19:22:30 [INFO] [32m2026-03-18 19:22:30[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-18 19:22:30 [INFO] [32m2026-03-18 19:22:30[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-18 19:22:31 [INFO] [32m2026-03-18 19:22:31[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-18 19:22:31 [INFO] [32m2026-03-18 19:22:31[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Ollama (llama3.2) initialized (Local LLM)[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🌐 Cloud LLM ready: Gemini[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local LLM ready: Ollama (llama3.2)[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Power LLM ready: NVIDIA Qwen3.5-397B[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local TTS (Pyttsx3) ready[0m
+2026-03-18 19:22:32 [INFO] ⚠️ Gemini API key not found. Cloud TTS unavailable.
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Cloud TTS (NVIDIA Riva) ready[0m
+2026-03-18 19:22:32 [INFO] ✅ Google Speech STT initialized (mic: [1] Microphone Array (AMD Audio Dev)
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ Google Speech STT ready (primary)[0m
+2026-03-18 19:22:32 [INFO] ✅ NVIDIA Whisper STT initialized
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ NVIDIA Whisper STT ready (secondary)[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m   Current STT: google[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m📖 Loading session context...[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ SOUL.md loaded (1767 chars)[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ USER.md loaded (User: Chetan Patil)[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ MEMORY.md loaded (1 entries)[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ Today's log ready[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized System Agent[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Memory Agent[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized General Agent[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Learning Agent[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Voice Agent[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Knowledge Agent[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Research Agent[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔀 AgentRouter initialized with 5 agents: System Agent, Memory Agent, Voice Agent, Knowledge Agent, Research Agent[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔄 Fallback agent: General Agent[0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m✅ Cypher is ready![0m
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36mrun_headless[0m - [1m🌙 Headless service mode — entering wake-word standby[0m
+2026-03-18 19:22:32 [INFO] ==================================================
+2026-03-18 19:22:32 [INFO]   🌙  CIPHER IS NOW IN STANDBY
+2026-03-18 19:22:32 [INFO]   Say 'Cipher' to wake up Modular Mode
+2026-03-18 19:22:32 [INFO]   Say 'Jarvis' to wake up Gemini Live Mode
+2026-03-18 19:22:32 [INFO]   Press Ctrl+C to exit
+2026-03-18 19:22:32 [INFO] ==================================================
+2026-03-18 19:22:32 [INFO] [32m2026-03-18 19:22:32[0m | [1mINFO    [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [1m🗣️ Stream-speaking via Riva (Magpie-Multilingual.EN-US.Jason): I'm standing by. Say Cipher or...[0m
+2026-03-18 19:22:38 [INFO] [32m2026-03-18 19:22:38[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36mstart[0m - [1m👂 Wake word detector started - say 'Jarvis' to wake up![0m
+2026-03-18 19:22:38 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 19:22:47 [INFO] [32m2026-03-18 19:22:47[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 19:22:48 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 19:22:48 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 19:22:48 [INFO] ==================================================
+2026-03-18 19:22:48 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 19:22:48 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 19:22:48 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 19:22:48 [INFO] ==================================================
+2026-03-18 19:22:48 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 19:22:49 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-18 19:22:50 [ERROR] Warning: there are non-data parts in the response: ['text', 'thought'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2026-03-18 19:23:23 [INFO] 🔧 Jarvis calling tool: start_hand_tracking({})
+2026-03-18 19:23:23 [INFO]    ✅ Tool result: Hand tracking mode turned on. Camera is active and recognizing gestures....
+2026-03-18 19:24:20 [INFO] 💤 Jarvis has been silent for 40 seconds. Auto-sleeping...
+2026-03-18 19:24:23 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-18 19:24:23 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-18 19:24:25 [INFO] ==================================================
+2026-03-18 19:24:25 [INFO]   💬  Back to text mode
+2026-03-18 19:24:25 [INFO] ==================================================
+2026-03-18 19:24:25 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-18 19:24:25 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-18 19:26:32 [INFO] [32m2026-03-18 19:26:32[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-18 19:26:32 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-18 19:26:32 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-18 19:26:32 [INFO] ==================================================
+2026-03-18 19:26:32 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-18 19:26:32 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-18 19:26:32 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-18 19:26:32 [INFO] ==================================================
+2026-03-18 19:26:33 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-18 19:26:33 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-21 18:00:11 [INFO] ============================================================
+2026-03-21 18:00:11 [INFO]   Cipher Background Service — Starting
+2026-03-21 18:00:11 [INFO] ============================================================
+2026-03-21 18:00:11 [INFO] PID 18660 written to D:\Cipher\service\cipher.pid
+2026-03-21 18:00:11 [INFO] Tray icon launched (pid=18540)
+2026-03-21 18:00:11 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-21 18:00:26 [INFO] [32m2026-03-21 18:00:26[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-21 18:00:26 [INFO] [32m2026-03-21 18:00:26[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-21 18:00:27 [INFO] [32m2026-03-21 18:00:27[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-21 18:00:27 [INFO] [32m2026-03-21 18:00:27[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Ollama (llama3.2) initialized (Local LLM)[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🌐 Cloud LLM ready: Gemini[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local LLM ready: Ollama (llama3.2)[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Power LLM ready: NVIDIA Qwen3.5-397B[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local TTS (Pyttsx3) ready[0m
+2026-03-21 18:00:29 [INFO] ⚠️ Gemini API key not found. Cloud TTS unavailable.
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Cloud TTS (NVIDIA Riva) ready[0m
+2026-03-21 18:00:29 [INFO] ✅ Google Speech STT initialized (mic: [1] Microphone Array (AMD Audio Dev)
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ Google Speech STT ready (primary)[0m
+2026-03-21 18:00:29 [INFO] ✅ NVIDIA Whisper STT initialized
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ NVIDIA Whisper STT ready (secondary)[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m   Current STT: google[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m📖 Loading session context...[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ SOUL.md loaded (1767 chars)[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ USER.md loaded (User: Chetan Patil)[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ MEMORY.md loaded (1 entries)[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ Today's log ready[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized System Agent[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Memory Agent[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized General Agent[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Learning Agent[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Voice Agent[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Knowledge Agent[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Research Agent[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔀 AgentRouter initialized with 5 agents: System Agent, Memory Agent, Voice Agent, Knowledge Agent, Research Agent[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔄 Fallback agent: General Agent[0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m✅ Cypher is ready![0m
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36mrun_headless[0m - [1m🌙 Headless service mode — entering wake-word standby[0m
+2026-03-21 18:00:29 [INFO] ==================================================
+2026-03-21 18:00:29 [INFO]   🌙  CIPHER IS NOW IN STANDBY
+2026-03-21 18:00:29 [INFO]   Say 'Cipher' to wake up Modular Mode
+2026-03-21 18:00:29 [INFO]   Say 'Jarvis' to wake up Gemini Live Mode
+2026-03-21 18:00:29 [INFO]   Press Ctrl+C to exit
+2026-03-21 18:00:29 [INFO] ==================================================
+2026-03-21 18:00:29 [INFO] [32m2026-03-21 18:00:29[0m | [1mINFO    [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [1m🗣️ Stream-speaking via Riva (Magpie-Multilingual.EN-US.Jason): I'm standing by. Say Cipher or...[0m
+2026-03-21 18:00:36 [INFO] [32m2026-03-21 18:00:36[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36mstart[0m - [1m👂 Wake word detector started - say 'Jarvis' to wake up![0m
+2026-03-21 18:00:36 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-21 20:02:39 [INFO] [32m2026-03-21 20:02:39[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36m_audio_callback[0m - [1m🔔 Wake word 'Jarvis' detected![0m
+2026-03-21 20:02:39 [INFO] 🔔 Wake word detected! Entity: jarvis
+2026-03-21 20:02:39 [INFO] 🤖 Starting Gemini Live Mode...
+2026-03-21 20:02:39 [INFO] ==================================================
+2026-03-21 20:02:39 [INFO]   🎙️  JARVIS MULTIMODAL LIVE ACTIVE
+2026-03-21 20:02:39 [INFO]   Speak to Jarvis naturally. Interrupt at any time.
+2026-03-21 20:02:39 [INFO]   Say 'stop', 'exit', or 'goodbye' to quit
+2026-03-21 20:02:39 [INFO] ==================================================
+2026-03-21 20:02:41 [INFO] 🌐 Connecting Jarvis to gemini-2.5-flash-native-audio-latest...
+2026-03-21 20:02:41 [INFO] ✅ Jarvis is live! Speak naturally. Say 'Goodbye Jarvis' to exit.
+2026-03-21 20:02:42 [ERROR] Warning: there are non-data parts in the response: ['text', 'thought'], returning concatenated data result from data parts, check out the non data parts for full response from model.
+2026-03-21 20:02:58 [INFO] 🔧 Jarvis calling tool: get_system_stats({})
+2026-03-21 20:03:00 [INFO]    ✅ Tool result: CPU: 23.9% (12 cores)
+2026-03-21 20:03:00 [INFO] RAM: 7.85GB used / 15.35GB total (51.2%)
+2026-03-21 20:03:00 [INFO] Disk C:\: 296.23GB used / 328.85GB to...
+2026-03-21 20:04:20 [INFO] 🔧 Jarvis calling tool: open_url({'url': 'https://www.youtube.com'})
+2026-03-21 20:04:20 [INFO]    ✅ Tool result: Opened: https://www.youtube.com...
+2026-03-21 20:04:35 [INFO] 🔧 Jarvis calling tool: open_url({'url': 'https://www.youtube.com'})
+2026-03-21 20:04:35 [INFO]    ✅ Tool result: Opened: https://www.youtube.com...
+2026-03-21 20:05:00 [INFO] 🔧 Jarvis calling tool: exit_session({})
+2026-03-21 20:05:00 [INFO] 👋 Jarvis: Goodbye! Returning to text mode.
+2026-03-21 20:05:02 [INFO] ==================================================
+2026-03-21 20:05:02 [INFO]   💬  Back to text mode
+2026-03-21 20:05:02 [INFO] ==================================================
+2026-03-21 20:05:02 [INFO] 🌙 Going back to standby... say 'Cipher' or 'Jarvis' to wake up again
+2026-03-21 20:05:02 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
+2026-03-31 18:24:22 [INFO] ============================================================
+2026-03-31 18:24:22 [INFO]   Cipher Background Service — Starting
+2026-03-31 18:24:22 [INFO] ============================================================
+2026-03-31 18:24:22 [INFO] PID 8456 written to D:\Cipher\service\cipher.pid
+2026-03-31 18:24:22 [INFO] Tray icon launched (pid=6892)
+2026-03-31 18:24:22 [INFO] Starting CypherEngine (attempt 1) …
+2026-03-31 18:24:31 [INFO] [32m2026-03-31 18:24:31[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m🚀 Initializing Cypher v0.1.0[0m
+2026-03-31 18:24:31 [INFO] [32m2026-03-31 18:24:31[0m | [1mINFO    [0m | [36msrc.ai.llm_router[0m:[36m__init__[0m - [1m🔀 LLM Router initialized: Simple≤3, Complex≥7[0m
+2026-03-31 18:24:32 [INFO] [32m2026-03-31 18:24:32[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Google Gemini 2.0 Flash initialized (Cloud LLM)[0m
+2026-03-31 18:24:32 [INFO] [32m2026-03-31 18:24:32[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ NVIDIA Qwen3.5-397B initialized (Power LLM)[0m
+2026-03-31 18:24:33 [INFO] [32m2026-03-31 18:24:33[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m✅ Ollama (llama3.2) initialized (Local LLM)[0m
+2026-03-31 18:24:33 [INFO] [32m2026-03-31 18:24:33[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🌐 Cloud LLM ready: Gemini[0m
+2026-03-31 18:24:33 [INFO] [32m2026-03-31 18:24:33[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local LLM ready: Ollama (llama3.2)[0m
+2026-03-31 18:24:33 [INFO] [32m2026-03-31 18:24:33[0m | [1mINFO    [0m | [36msrc.ai.llm_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Power LLM ready: NVIDIA Qwen3.5-397B[0m
+2026-03-31 18:24:33 [INFO] [32m2026-03-31 18:24:33[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m🏠 Local TTS (Pyttsx3) ready[0m
+2026-03-31 18:24:33 [INFO] ⚠️ Gemini API key not found. Cloud TTS unavailable.
+2026-03-31 18:24:33 [INFO] [32m2026-03-31 18:24:33[0m | [1mINFO    [0m | [36msrc.ai.tts_orchestrator[0m:[36m_setup_providers[0m - [1m⚡ Cloud TTS (NVIDIA Riva) ready[0m
+2026-03-31 18:24:33 [INFO] ✅ Google Speech STT initialized (mic: [1] Microphone Array (AMD Audio Dev)
+2026-03-31 18:24:33 [INFO] [32m2026-03-31 18:24:33[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ Google Speech STT ready (primary)[0m
+2026-03-31 18:24:33 [INFO] ✅ NVIDIA Whisper STT initialized
+2026-03-31 18:24:33 [INFO] [32m2026-03-31 18:24:33[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m🎙️ NVIDIA Whisper STT ready (secondary)[0m
+2026-03-31 18:24:33 [INFO] [32m2026-03-31 18:24:33[0m | [1mINFO    [0m | [36msrc.ai.stt_orchestrator[0m:[36m_setup_providers[0m - [1m   Current STT: google[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m📖 Loading session context...[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ SOUL.md loaded (1767 chars)[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ USER.md loaded (User: Chetan Patil)[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ MEMORY.md loaded (1 entries)[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m_initialize_session[0m - [1m   ✓ Today's log ready[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized System Agent[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Memory Agent[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized General Agent[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Learning Agent[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Voice Agent[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Knowledge Agent[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.agents.base_agent[0m:[36m__init__[0m - [1m✅ Initialized Research Agent[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔀 AgentRouter initialized with 5 agents: System Agent, Memory Agent, Voice Agent, Knowledge Agent, Research Agent[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.agents.agent_router[0m:[36m__init__[0m - [1m🔄 Fallback agent: General Agent[0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36m__init__[0m - [1m✅ Cypher is ready![0m
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.core.engine[0m:[36mrun_headless[0m - [1m🌙 Headless service mode — entering wake-word standby[0m
+2026-03-31 18:24:34 [INFO] ==================================================
+2026-03-31 18:24:34 [INFO]   🌙  CIPHER IS NOW IN STANDBY
+2026-03-31 18:24:34 [INFO]   Say 'Cipher' to wake up Modular Mode
+2026-03-31 18:24:34 [INFO]   Say 'Jarvis' to wake up Gemini Live Mode
+2026-03-31 18:24:34 [INFO]   Press Ctrl+C to exit
+2026-03-31 18:24:34 [INFO] ==================================================
+2026-03-31 18:24:34 [INFO] [32m2026-03-31 18:24:34[0m | [1mINFO    [0m | [36msrc.ai.tts_providers.riva_tts_provider[0m:[36mspeak[0m - [1m🗣️ Stream-speaking via Riva (Magpie-Multilingual.EN-US.Jason): I'm standing by. Say Cipher or...[0m
+2026-03-31 18:24:39 [INFO] [32m2026-03-31 18:24:39[0m | [1mINFO    [0m | [36msrc.ai.wake_word_detector[0m:[36mstart[0m - [1m👂 Wake word detector started - say 'Jarvis' to wake up![0m
+2026-03-31 18:24:40 [INFO] 👂 Listening for wake word 'Cipher' or 'Jarvis'...
