@@ -16,8 +16,23 @@ pip install -r requirements.txt
 
 ### 3. Configure Environment
 ```bash
-copy .env.template .env
-# Edit .env with your API keys (optional for Phase 0)
+cp .env.template .env
+# Edit .env and add your API keys
+```
+
+#### Sample `.env` Configuration:
+```env
+# Essential for Wake Word
+PICOVOICE_API_KEY=your_key_here
+
+# Recommended for Gemini Live Mode
+GOOGLE_API_KEY=your_key_here
+
+# For STT and Enhanced LLM Skills
+NVIDIA_API_KEY=your_key_here
+
+# Optional: Tavily, Anthropic, OpenAI
+TAVILY_API_KEY=your_key_here
 ```
 
 ### 4. Run Cypher
